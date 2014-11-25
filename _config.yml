@@ -1,0 +1,9 @@
+defaults:
+  -
+    scope:
+      path: "projects"
+      type: "pages"
+    values:
+      layout: "project"
+      author: "Kamran Payne"
+      category: "project"
