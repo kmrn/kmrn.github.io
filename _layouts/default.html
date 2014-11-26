@@ -1,6 +1,17 @@
 <!DOCTYPE html>
-{% include header.html %}
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{{ page.title }}</title>
+		<meta name="author" content="Kamran" />
 
-{{ content }}
+		<link rel="stylesheet" type="text/css" href="css/app.css">
+	</head>
+	<body>
+		{% include header.html %}
 
-{% include footer.html %}
+		{{ content }}
+
+		{% include footer.html %}
+	</body>
+</html>
