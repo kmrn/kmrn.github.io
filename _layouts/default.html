@@ -8,14 +8,17 @@
 		<link rel="stylesheet" type="text/css" href="css/application.css">
 	</head>
 	<body>
-		<header class="main-header">
-			{% include header.html %}
-		</header>
-		<div class="main-container">
-			{{ content }}
+		<div class="default-container">
+			<header class="main-header">
+				{% include header.html %}
+			</header>
+			<hr />
+			<div class="main-container">
+				{{ content }}
+			</div>
+			<footer class="main-footer">
+				{% include footer.html %}
+			</footer>
 		</div>
-		<footer class="main-footer">
-			{% include footer.html %}
-		</footer>
 	</body>
 </html>

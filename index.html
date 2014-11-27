@@ -3,5 +3,31 @@ layout: default
 title: It's me, KP.
 ---
 
-<p>Hello World</p>
+<section class="bio-container">
+	<div class="bio-photo-container">
+		<div class="bio-photo"></div>
+	</div>
+	<div class="bio-text-container"></div>
+		<p class="bio-text">
+			This is a biographical thing about me.
+		</p>
+	</div>
+</section>
 
+<section class="blog-posts">
+	<ul>
+	  {% for post in site.posts %}
+	    <li>
+	      <a href="{{ post.url }}">{{ post.title }}</a>
+	    </li>
+	  {% endfor %}
+	</ul>
+</section>
+
+<section class="portfolio-preview">
+
+</section>
+
+<section class="contact">
+
+</section>

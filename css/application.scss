@@ -5,25 +5,42 @@
 
 @import "bourbon/bourbon";
 @import "neat/neat";
+@import "base/base";
+
+h1, h2, h3, h4, h5, h6, p {
+	color: #E0E0E0;
+}
 
 html body {
 	padding: 0;
 	margin: 0;
-	background-color: #f9f9f9;
+	background-color: #546E7A;
 }
 
-.main-header,
-.main-container,
-.main-footer {
-	@include row();
-}
+a { color: #ff80ab; }
+a:hover { color: #ff4081; }
 
-.main-header {
-	height: 100px;
-	background-color: #607D8B;
-}
+.default-container {
+	max-width: 950px;
+	margin: 0 auto;
 
-.main-footer {
-	height: 100px;
-	background-color: #607D8B;
+	.main-header,
+	.main-container,
+	.main-footer {
+		@include row();
+	}
+
+	.main-header {
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+
+	.main-container {
+		@import "index-style";
+	}
+
+
+	.main-footer {
+		height: 100px;
+	}
 }
