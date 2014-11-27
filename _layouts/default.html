@@ -5,13 +5,17 @@
 		<title>{{ page.title }}</title>
 		<meta name="author" content="Kamran" />
 
-		<link rel="stylesheet" type="text/css" href="css/app.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/application.css">
 	</head>
 	<body>
-		{% include header.html %}
-
-		{{ content }}
-
-		{% include footer.html %}
+		<header class="main-header">
+			{% include header.html %}
+		</header>
+		<div class="main-container">
+			{{ content }}
+		</div>
+		<footer class="main-footer">
+			{% include footer.html %}
+		</footer>
 	</body>
 </html>
