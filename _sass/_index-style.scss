@@ -16,3 +16,19 @@
 		@include span-columns(9 of 12);
 	}
 }
+
+.posts-container {
+	.posts {
+		padding-left: 40px;
+
+		.post-link-entry {
+			.post-link {
+				vertical-align: middle;
+			}
+			.link-divider {
+				vertical-align: middle;
+				font-size: 150%;
+			}
+		}
+	}
+}

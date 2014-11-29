@@ -5,3 +5,6 @@ gem 'github-pages'
 
 #Bourbon Sass Mixin Library
 gem 'bourbon'
+
+#Bourbon Neat Addon
+gem 'neat'
