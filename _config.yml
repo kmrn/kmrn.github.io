@@ -1,7 +1,5 @@
 
-gems:
-- bourbon
-- neat
+gems: [bourbon, neat]
 
 markdown: kramdown
 
