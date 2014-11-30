@@ -5,8 +5,6 @@ gems:
 
 markdown: kramdown
 
-sass:
-	style: :compressed
 
 defaults:
   -
