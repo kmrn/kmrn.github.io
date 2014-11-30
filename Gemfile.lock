@@ -132,4 +132,5 @@ PLATFORMS
 DEPENDENCIES
   bourbon
   github-pages
+  jekyll
   neat

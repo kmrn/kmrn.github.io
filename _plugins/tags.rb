@@ -12,4 +12,4 @@ module Jekyll
 	end
 end
 
-Liquid::Template.register_tag('render_line', Jekyll::RenderLine)
+Liquid::Template.register_tag('random_line', Jekyll::RenderLine)

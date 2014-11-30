@@ -1,4 +1,9 @@
-gems: [bourbon, neat]
+
+gems:
+- bourbon
+- neat
+
+
 
 defaults:
   -
