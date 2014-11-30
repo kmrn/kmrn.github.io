@@ -1,9 +1,25 @@
 
+
+
+# Site settings
+title: Kamran's Krab Shack
+email: mail@kamranpayne.com
+description: "How did I get here?"
+baseurl: "/"
+url: "https://ron953.github.io"
+twitter_username: kamranpayne
+github_username:  ron953
+
 gems: [bourbon, neat]
 
+# Build settings
 markdown: kramdown
+permalink: pretty
 
-
+# Sass settings
+sass:
+    sass_dir: _sass
+    style: :compressed
 
 defaults:
   -
