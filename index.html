@@ -6,7 +6,7 @@ title: It's me, KP.
 <section class="bio-container">
 	<div class="bio-text-container">
 		<p class="bio-text">
-			This is a biographical thing about me.
+			{% render_line bio.txt %}
 		</p>
 	</div>
 </section>
@@ -20,8 +20,7 @@ title: It's me, KP.
 		  {% for post in site.posts %}
 		    <li class="post-link-entry">
 		      <a href="{{ post.url }}" class="post-link">{{ post.date | date_to_string }} <span class="link-divider">////</span> {{ post.title }}</a>
-<!-- 		      <a href="{{ post.url }}">{{ post.title }}</a>
- -->		</li>
+			</li>
 		  {% endfor %}
 		</ul>
 	</div>

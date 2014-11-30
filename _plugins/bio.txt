@@ -1,0 +1,4 @@
+This is a biographical thing about me.
+Another bio text thing testing a ruby plugin.
+Here's another example line.
+Woah look at that! Another Thing!

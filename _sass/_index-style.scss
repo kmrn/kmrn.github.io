@@ -2,10 +2,8 @@
 //styles for index.html go here
 
 .bio-container {
-	@include span-columns(12);
 
 	.bio-photo-container {
-		@include span-columns(3 of 12);
 
 		.bio-photo {
 			background-image: url(http://placehold.it/300);
@@ -13,7 +11,9 @@
 	}
 
 	.bio-text-container {
-		@include span-columns(9 of 12);
+		.bio-text {
+			text-align: center;
+		}
 	}
 }
 
