@@ -5,6 +5,10 @@ gems:
 
 markdown: kramdown
 
+sass:
+	sass_dir: _sass
+	style: :compressed
+
 defaults:
   -
     scope:
