@@ -3,7 +3,7 @@ gems:
 - bourbon
 - neat
 
-
+markdown: kramdown
 
 defaults:
   -
