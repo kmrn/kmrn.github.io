@@ -1,3 +1,5 @@
+---
+---
 
 @import "bourbon/bourbon";
 @import "neat/neat";
@@ -23,12 +25,12 @@ a:hover { color: #ff4081; }
 .default-container {
 	max-width: 950px;
 	margin: 0 auto;
-	//@include pad(20px 20px 20px 20px);
+	@include pad(20px 20px 20px 20px);
 
 	.main-header,
 	.main-container,
 	.main-footer {
-		//@include row();
+		@include row();
 	}
 
 	.main-header {
