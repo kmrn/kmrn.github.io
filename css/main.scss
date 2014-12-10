@@ -1,9 +1,9 @@
 ---
 ---
 
-@import "bourbon/bourbon";
-@import "neat/neat";
-@import "base/base";
+@import "normalize";
+@import "skeleton";
+
 
 //syntax highlighting
 @import "syntax";
@@ -19,7 +19,10 @@ html body {
 	background-color: #546E7A;
 }
 
-a { color: #ff80ab; }
+a { 
+	color: #ff80ab;
+	text-decoration: none;
+}
 a:hover { color: #ff4081; }
 
 .default-container {
@@ -39,10 +42,10 @@ a:hover { color: #ff4081; }
 	}
 
 	.main-container {
-		@import "index-style";
+		//@import "index-style";
 	}
 
 	.main-footer {
-		@import "footer-style";
+		//@import "footer-style";
 	}
 }

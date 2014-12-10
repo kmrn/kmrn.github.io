@@ -10,8 +10,6 @@ url: "https://ron953.github.io"
 twitter_username: kamranpayne
 github_username:  ron953
 
-gems: [bourbon, neat]
-
 # Build settings
 markdown: kramdown
 permalink: pretty
@@ -19,7 +17,6 @@ permalink: pretty
 # Sass settings
 sass:
     sass_dir: _sass
-    style: :compressed
 
 defaults:
   -
