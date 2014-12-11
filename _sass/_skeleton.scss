@@ -11,6 +11,7 @@
 
 /* Table of contents
 –––––––––––––––––––––––––––––––––––––––––––––––––– 
+- Variables
 - Grid
 - Base Styles
 - Typography
@@ -25,6 +26,19 @@
 - Clearing
 - Media Queries
 */
+
+
+/* Variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$primary-color-lightest: #ECEFF1;
+$primary-color-light: #90A4AE;
+$primary-color-medium: #607d8b;
+$primary-color-dark: #455A64;
+$primary-color-darkest: #263238;
+
+$accent-color-lighter: #FF80AB;
+$accent-color: #FF4081;
+$accent-color-darker: #F50057;
 
 
 /* Grid
@@ -187,8 +201,10 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  border-color: #33C3F0;
-  background-color: #33C3F0; }
+  // border-color: #33C3F0;
+  border-color: $accent-color;
+  // background-color: #33C3F0; 
+  background-color: $accent-color; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -199,8 +215,9 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  background-color: #1EAEDB;
-  border-color: #1EAEDB;
+  //background-color: #1EAEDB;
+  background-color: $accent-color-darker;
+  border-color: $accent-color-darker;
   color: #FFF; }
 
 

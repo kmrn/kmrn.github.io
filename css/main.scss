@@ -10,6 +10,8 @@
 
 @import "mixins";
 
+@import "font-awesome/font-awesome";
+
 
 h1, h2, h3, h4, h5, h6, p {
 	color: #111;
@@ -19,7 +21,7 @@ h1, h2, h3, h4, h5, h6, p {
 html body {
 	padding: 0;
 	margin: 0;
-	background-color: #eceff1;
+	background-color: $primary-color-lightest;
 	width: 100%;
 }
 
@@ -29,15 +31,20 @@ footer {
 		color: #e0e0e0;
 	}
 
+	a { color: $accent-color-lighter; }
+	a:hover { color: $accent-color; }
+
 	background-color: #455a64;
 	padding: 0;
 	margin: 0;
 }
 
 a { 
-	color: #ff4081;
+	color: $accent-color;
 	text-decoration: none;
 }
+
+a:hover { color: $accent-color-darker; }
 
 
 //Lists
@@ -77,24 +84,25 @@ dl {
 
 
 
-a:hover { color: #f50057; }
+
 
 .default-container {
 
 	margin: 0 auto;
 	//@include pad(20px 20px 20px 20px);
 
-	.main-header,
-	.main-container,
-	.main-footer {
-		//@include row();
+
+	.post-content {
+		padding: 40px 0;
 	}
 
 	@import "header-style";
 
-	.main-container {
-		@import "index-style";
-	}
+	@import "index-style";
+	//@import "blog-style";
+	//@import "projects-style";
+	//@import "resume-style";
+	//@import "contact-style";
 
 	@import "footer-style";
 }

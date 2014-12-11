@@ -1,34 +1,37 @@
 //_index-style.scss
 //styles for index.html go here
 
-.bio-container {
+.main-container {
 
-	.bio-photo-container {
+	.bio-container {
 
-		.bio-photo {
-			background-image: url(http://placehold.it/300);
-		}
-	}
+		.bio-image-container {
 
-	.bio-text-container {
-		.bio-text {
-			text-align: center;
-		}
-	}
-}
-
-.posts-container {
-	
-	.posts {
-		padding-left: 40px;
-
-		.post-link-entry {
-			.post-link {
-				vertical-align: middle;
+			.bio-image {
+				background-image: url(http://placehold.it/300);
 			}
-			.link-divider {
-				vertical-align: middle;
-				font-size: 150%;
+		}
+
+		.bio-text-container {
+			.bio-text {
+				text-align: center;
+			}
+		}
+	}
+
+	.posts-container {
+
+		.posts {
+			padding-left: 40px;
+
+			.post-link-entry {
+				.post-link {
+					vertical-align: middle;
+				}
+				.link-divider {
+					vertical-align: middle;
+					font-size: 150%;
+				}
 			}
 		}
 	}

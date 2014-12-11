@@ -1,8 +1,18 @@
+//_header-style.scss
+//styles for headers go here
+
+header { @include ambient-shadow(); }
+
+.post-header {
+	z-index: 2;
+}
+
 .main-header {
+	z-index: 1;
+	
 	padding-top: 30px;
 	padding-bottom: 20px;
 
-	@include ambient-shadow();
 
 	.my-name {
 		text-align: center;
@@ -18,12 +28,12 @@
 		}
 	}
 
-	button {
+	.button {
 		color: #e0e0e0;
 		background-color: #455a64;
-
-		button:active {
-
-		}
 	}
+}
+
+.post-header {
+	padding-top: 20px;
 }

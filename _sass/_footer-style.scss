@@ -2,17 +2,12 @@
 
 	@include ambient-shadow();
 
+	.section { margin-bottom: -50px; }
+
 	.footer-logo {
 		margin: 0 auto;
 		text-align: center;
 		padding-bottom: 20px;
-	}
-
-	.values {
-	  background-image: url('../images/values-bg.jpg');
-	  background-size: cover;
-	  color: #fff;
-	  //padding-bottom: 20px;
 	}
 
 	.value-multiplier {
@@ -23,16 +18,29 @@
 
 	.value-heading {
 	  margin-bottom: .3rem;
+	  text-align: center;
 	}
 
-	.value-description,
-	.value-description li {
-	  opacity: .8;
+	.value-description {
 	  font-weight: 300;
+
+	  button {width: 150px;}
+
+	  i {
+	  	font-size: 20px;
+	  	//vertical-align: middle;
+	  }
+	}
+
+	#footer-divider {
+		width: 30%;
+		opacity: 0.3;
 	}
 
 	.footer {
-		padding: 50px 20px;
+		padding: 0 20px;
+		padding-top: 50px;
+		padding-bottom: 20px;
 	}
 
 	.copyright {
