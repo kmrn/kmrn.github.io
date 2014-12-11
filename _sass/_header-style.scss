@@ -1,0 +1,27 @@
+.main-header {
+	padding-top: 30px;
+	padding-bottom: 20px;
+
+	.my-name {
+		text-align: center;
+	}
+
+	.navbar {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+
+		.navlist li {
+			display: inline;
+		}
+	}
+
+	button {
+		color: #e0e0e0;
+		background-color: #455a64;
+
+		button:active {
+
+		}
+	}
+}
