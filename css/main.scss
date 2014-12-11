@@ -8,6 +8,8 @@
 //syntax highlighting
 @import "syntax";
 
+@import "mixins";
+
 
 h1, h2, h3, h4, h5, h6, p {
 	color: #111;
@@ -94,7 +96,5 @@ a:hover { color: #f50057; }
 		@import "index-style";
 	}
 
-	.main-footer {
-		@import "footer-style";
-	}
+	@import "footer-style";
 }
