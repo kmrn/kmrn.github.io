@@ -3,6 +3,7 @@
 
 @import "normalize";
 @import "skeleton";
+@import "bourbon";
 
 
 //syntax highlighting
@@ -11,22 +12,70 @@
 
 h1, h2, h3, h4, h5, h6, p {
 	color: #E0E0E0;
+	padding: 0 20px;
 }
 
 html body {
 	padding: 0;
 	margin: 0;
-	background-color: #546E7A;
+	background-color: #eceff1;
+	width: 100%;
+}
+
+header,
+footer {
+	background-color: #455a64;
+	padding: 0;
+	margin: 0;
 }
 
 a { 
-	color: #ff80ab;
+	color: #ff4081;
 	text-decoration: none;
 }
-a:hover { color: #ff4081; }
+
+
+//Lists
+$base-line-height: 0.5;
+$base-spacing: $base-line-height * 1em;
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+	&%default-ul {
+		list-style-type: disc;
+		margin-bottom: $base-spacing / 2;
+		padding-left: $base-spacing;
+	}
+
+	&%default-ol {
+		list-style-type: decimal;
+		margin-bottom: $base-spacing / 2;
+		padding-left: $base-spacing;
+	}
+}
+
+dl {
+	margin-bottom: $base-spacing / 2;
+
+	dt {
+		font-weight: bold;
+		margin-top: $base-spacing / 2;
+	}
+
+	dd {
+		margin: 0;
+	}
+}
+
+
+
+a:hover { color: #f50057; }
 
 .default-container {
-	max-width: 950px;
+
 	margin: 0 auto;
 	//@include pad(20px 20px 20px 20px);
 
@@ -46,6 +95,6 @@ a:hover { color: #ff4081; }
 	}
 
 	.main-footer {
-		//@import "footer-style";
+		@import "footer-style";
 	}
 }
