@@ -3,13 +3,8 @@
 
 header { @include ambient-shadow(); }
 
-.post-header {
-	z-index: 2;
-}
-
 .main-header {
-	z-index: 1;
-	
+
 	padding-top: 30px;
 	padding-bottom: 20px;
 
@@ -32,8 +27,11 @@ header { @include ambient-shadow(); }
 		color: #e0e0e0;
 		background-color: #455a64;
 	}
+
+	.post-header {
+		padding-top: 30px;
+		padding-bottom: 0;
+		margin-bottom: -20px;
+	}
 }
 
-.post-header {
-	padding-top: 20px;
-}

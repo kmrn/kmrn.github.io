@@ -6,9 +6,18 @@
 	.bio-container {
 
 		.bio-image-container {
+			text-align: center;
 
 			.bio-image {
-				background-image: url(http://placehold.it/300);
+				margin: 0 auto;
+
+				background-color: $accent-color;
+				height: 300px;
+				width: 300px;
+
+				-webkit-border-radius: 150px;
+				-moz-border-radius: 150px;
+				border-radius: 150px;
 			}
 		}
 

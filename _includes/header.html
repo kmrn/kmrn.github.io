@@ -6,13 +6,26 @@
 			</div>
 			<div class="navbar">
 				<ul class="navlist">
-					<li><a class="button" href="#">Home</a></li>
-					<li><a class="button" href="#">Blog</a></li>
-					<li><a class="button" href="#">Projects</a></li>
-					<li><a class="button" href="#">Resume</a></li>
-					<li><a class="button" href="#">Contact</a></li>
+					<li><a class="button" href="/">Home</a></li>
+					<li><a class="button" href="/blog/">Blog</a></li>
+					<li><a class="button" href="/projects/">Projects</a></li>
+					<li><a class="button" href="/resume/">Resume</a></li>
+					<li><a class="button" href="/contact/">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
+
+	{% if page.path contains '_posts' %}
+		<div class="post-header">
+			<div class="container">
+				<div class="row">
+					<h1 class="post-title">{{ page.title }}</h1>
+					<p class="post-meta">
+						{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+					</p>
+				</div>
+			</div>
+		</div>
+	{% endif %}
 </header>
