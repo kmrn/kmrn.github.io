@@ -1,6 +1,7 @@
 ---
 layout: project
 title:  example3
+short-title: another things
 date:   2014-10-18 12:58:29
 categories: projects
 image: http://lorempixel.com/400/600/

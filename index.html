@@ -23,7 +23,7 @@ title: It's me, KP.
         <ul class="projects-container">
           {% for post in site.categories.projects limit:4 %}<li class="project" style="background-image: url({{post.image}});">
               <div class="project-action">
-                <h5 class="project-title" style="color: {{ post.titlecolor }}">{{ post.title }}</h5>
+                <h5 class="project-title">{{ post.short-title }}</h5>
                 <a href="{{ post.url }}" class="button">View</a>
               </div></li>{% endfor %}
         </ul>

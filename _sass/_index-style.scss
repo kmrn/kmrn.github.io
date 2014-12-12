@@ -5,6 +5,8 @@
 
   .bio-container {
 
+    padding-bottom: 30px;
+
     .bio-image-container {
       text-align: center;
       padding-bottom: 30px;
@@ -73,7 +75,7 @@
           //margin-right: 17px;
         }
 
-        @media (min-width: 550px) {
+        @media (min-width: 750px) {
           width: 25%;
           height: 25vw;
           @include calc(min-width, '25% - 4.25px');
@@ -95,8 +97,9 @@
         width: 100%;
         background-color: rgba($primary-color-darkest, 0.7);
         position: relaitve;
-        //opacity: 0;
 
+        .project-title { padding-top: 40px; }
+        
         .project-title,
         .button {
           vertical-align: middle;
