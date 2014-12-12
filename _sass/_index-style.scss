@@ -20,17 +20,44 @@
 				-moz-border-radius: 100px;
 				border-radius: 100px;
 
-				@include key-shadow();
+				@include key-shadow($primary-color-light);
 			}
 		}
 
 		.bio-text-container {
 			.bio-header {
-				//padding: 0 20px;
+				padding: 0 2.5%;
 			}
 		
 			.bio-text {
 				// text-align: center;
+			}
+		}
+	}
+
+	.divider { width: 80%; }
+
+	.latest-container {
+		.projects-container {
+			margin: 0 auto;
+
+			.projects-container li {
+				display: inline;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				width: 100%;
+				font-size: 0;
+			}
+
+			.project {
+
+				width: 200px;
+				height: 200px;
+
+				position: relative;
+				display: inline-block;
+				font-size: 0;
 			}
 		}
 	}

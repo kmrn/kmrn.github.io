@@ -16,17 +16,16 @@ title: It's me, KP.
 	  </div>
 	</section>
 	<hr class="divider" />
-	<section class="row posts-container">
-		<h3>Blag.</h3>
-		<h6>Written by me, read by nobody.</h6>
-		<div class="posts">
-			<ul>
-			  {% for post in site.posts %}
-			    <li class="post-link-entry">
-			      <a href="{{ post.url }}" class="post-link">{{ post.date | date_to_string }} <span class="link-divider">////</span> {{ post.title }}</a>
-					</li>
-			  {% endfor %}
+	<section class="latest-container">
+		<div class="row">
+			<h3>My Latest Projects</h3>
+			<ul class="projects-container">
+				{% for post in site.categories.projects limit:4 %}
+					<li class="project" style="background-image: url({{post.image}});">
+						<h5 class="project-title">{{ post.title }}</h5>
+					
+				{% endfor %}
 			</ul>
-		</div>
+		</row>
 	</section>
 </div>

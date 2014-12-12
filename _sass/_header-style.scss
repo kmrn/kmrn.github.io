@@ -1,7 +1,7 @@
 //_header-style.scss
 //styles for headers go here
 
-header { @include ambient-shadow(); }
+header { @include ambient-shadow(#555); }
 
 .main-header {
 

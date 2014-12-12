@@ -1,12 +1,12 @@
 //Shadows
-@mixin ambient-shadow() {
-	-webkit-box-shadow: 0 0 5px 2px #555;
-	-moz-box-shadow: 0 0 5px 2px #555;
-	box-shadow: 0 0 5px 2px #555;
+@mixin ambient-shadow($color) {
+	-webkit-box-shadow: 0 0 5px 2px $color;
+	-moz-box-shadow: 0 0 5px 2px $color;
+	box-shadow: 0 0 5px 2px $color;
 }
 
-@mixin key-shadow() {
-	-webkit-box-shadow: 0 5px 10px 5px $primary-color-light;
-	-moz-box-shadow: 0 5px 10px 5px $primary-color-light;
-	box-shadow: 0 5px 10px 5px $primary-color-light;
+@mixin key-shadow($color) {
+	-webkit-box-shadow: 0 5px 10px 5px $color;
+	-moz-box-shadow: 0 5px 10px 5px $color;
+	box-shadow: 0 5px 10px 5px $color;
 }
