@@ -3,7 +3,8 @@ layout: default
 ---
 
 <!-- /blog/index.html
-This page will appear when you visit /blog -->
+This page will appear when you visit /blog --> 
+
 <div class="main-container">
   <section class="container posts-container">
     <div class="row">
@@ -12,9 +13,13 @@ This page will appear when you visit /blog -->
       <div class="posts">
         <ul>
           {% for post in site.posts %}
-            <li class="post-link-entry">
-              <a href="{{ post.url }}" class="post-link">{{ post.date | date_to_string }} <span class="link-divider">////</span> {{ post.title }}</a>
-            </li>
+            {% if post.layout == "project" %}
+              <!-- do nothing -->
+            {% else if %}
+              <li class="post-link-entry">
+                <a href="{{ post.url }}" class="post-link">{{ post.date | date_to_string }} <span class="link-divider">////</span> {{ post.title }}</a>
+              </li>
+            {% endif %}
           {% endfor %}
         </ul>
       </div>
