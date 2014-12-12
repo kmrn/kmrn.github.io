@@ -3,6 +3,8 @@
 
 header {
   @include ambient-shadow(#555);
+  display: block;
+  position: relative;
   z-index: 99;
 }
 
