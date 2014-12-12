@@ -4,3 +4,9 @@
 	-moz-box-shadow: 0 0 5px 2px #555;
 	box-shadow: 0 0 5px 2px #555;
 }
+
+@mixin key-shadow() {
+	-webkit-box-shadow: 0 5px 10px 5px $primary-color-light;
+	-moz-box-shadow: 0 5px 10px 5px $primary-color-light;
+	box-shadow: 0 5px 10px 5px $primary-color-light;
+}

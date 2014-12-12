@@ -7,23 +7,30 @@
 
 		.bio-image-container {
 			text-align: center;
+			padding-bottom: 30px;
 
 			.bio-image {
 				margin: 0 auto;
 
 				background-color: $accent-color;
-				height: 300px;
-				width: 300px;
+				height: 200px;
+				width: 200px;
 
-				-webkit-border-radius: 150px;
-				-moz-border-radius: 150px;
-				border-radius: 150px;
+				-webkit-border-radius: 100px;
+				-moz-border-radius: 100px;
+				border-radius: 100px;
+
+				@include key-shadow();
 			}
 		}
 
 		.bio-text-container {
+			.bio-header {
+				//padding: 0 20px;
+			}
+		
 			.bio-text {
-				text-align: center;
+				// text-align: center;
 			}
 		}
 	}
