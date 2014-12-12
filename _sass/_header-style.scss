@@ -1,7 +1,10 @@
 //_header-style.scss
 //styles for headers go here
 
-header { @include ambient-shadow(#555); }
+header {
+	@include ambient-shadow(#555);
+	z-index: 99;
+}
 
 .main-header {
 

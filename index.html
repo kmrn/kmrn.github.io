@@ -3,29 +3,31 @@ layout: default
 title: It's me, KP.
 ---
 
-<div class="container">
-	<section class="row bio-container">
-	  <div class="bio-image-container one-third column">
-	  	<div class="bio-image"></div>
-	  </div>
-	  <div class="bio-text-container two-thirds column">
-	  	<pre class="bio-header"><code>$ whoami<br>Kamran Payne</code></pre>
-	  	<p class="bio-text">
-				I'm a developer. That's me over to the left. I enjoy making cool things, meeting new people, and trying new foods! My resume has my work history and skills, that projects page has a list of stuff I've worked on, and that blog is just there I guess. You can get a hold of me on various social networks or just with an email.
-			</p>
-	  </div>
-	</section>
-	<hr class="divider" />
-	<section class="latest-container">
-		<div class="row">
-			<h3>My Latest Projects</h3>
-			<ul class="projects-container">
-				{% for post in site.categories.projects limit:4 %}
-					<li class="project" style="background-image: url({{post.image}});">
-						<h5 class="project-title">{{ post.title }}</h5>
-					
-				{% endfor %}
-			</ul>
-		</row>
-	</section>
+<div class="main-container">
+	<div class="container">
+		<section class="row bio-container">
+		  <div class="bio-image-container one-third column">
+		  	<div class="bio-image"></div>
+		  </div>
+		  <div class="bio-text-container two-thirds column">
+		  	<pre class="bio-header"><code>$ whoami<br>Kamran Payne</code></pre>
+		  	<p class="bio-text">
+					I'm a developer. That's me over to the left. I enjoy making cool things, meeting new people, and trying new foods! My resume has my work history and skills, that projects page has a list of stuff I've worked on, and that blog is just there I guess. You can get a hold of me on various social networks or just with an email.
+				</p>
+		  </div>
+		</section>
+		<hr class="divider" />
+		<section class="latest-container">
+			<div class="row">
+				<h3>My Latest Projects</h3>
+				<ul class="projects-container">
+					{% for post in site.categories.projects limit:4 %}
+						<li class="project" style="background-image: url({{post.image}});">
+							<h5 class="project-title">{{ post.title }}</h5>
+							<a href="{{ post.url }}" class="button button-primary">View</a>
+					{% endfor %}
+				</ul>
+			</row>
+		</section>
+	</div>
 </div>

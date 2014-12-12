@@ -3,7 +3,7 @@ layout: project
 title:  example4
 date:   2014-10-18 12:58:29
 categories: projects
-image: http://lorempixel.com/800/600/
+image: http://lorempixel.com/960/600/
 ---
 
 Here is some example project markdown.
