@@ -35,9 +35,14 @@
 		}
 	}
 
-	.divider { width: 80%; }
+	.divider { 
+		width: 80%;
+		padding-bottom: 20px;
+	}
 
 	.latest-container {
+		padding-bottom: 20px;
+
 		.projects-container {
 			//margin: 0 auto;
 			@media not -webkit-device-pixel-ratio {
