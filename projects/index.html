@@ -5,18 +5,20 @@ layout: default
 <!-- /projects/index.html
 This page will appear when you visit /projects/ -->
 
-<section class="container posts-container">
-	<div class="row">
-		<h3>Projects</h3>
-		<h6>What I've created.</h6>
-		<div class="posts">
-			<ul>
-			  {% for post in site.categories.projects %}
-			    <li class="post-link-entry">
-			      <a href="{{ post.url }}" class="post-link">{{ post.date | date_to_string }} <span class="link-divider">////</span> {{ post.title }}</a>
-					</li>
-			  {% endfor %}
-			</ul>
-		</div>
-	</div>
-</section>
+<div class="main-container">
+  <section class="container posts-container">
+    <div class="row">
+      <h3>Projects</h3>
+      <h6>What I've created.</h6>
+      <div class="posts">
+        <ul>
+          {% for post in site.categories.projects %}
+            <li class="post-link-entry">
+              <a href="{{ post.url }}" class="post-link">{{ post.date | date_to_string }} <span class="link-divider">////</span> {{ post.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
