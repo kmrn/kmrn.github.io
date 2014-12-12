@@ -1,15 +1,12 @@
 //_projects.scss
 //styles for /projects/ go here
 
-// body {
-//   position: relative;
-// }
 
 .featured-image {
-  @include ambint-shadow(#555);
+  @include ambient-shadow(#555);
 
 	height: 400px;
   width: 100%;
-  position: absolute;
+  //position: absolute;
   z-index: 1;
 }
