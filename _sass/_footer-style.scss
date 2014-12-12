@@ -1,53 +1,53 @@
 .main-footer {
 
-	@include ambient-shadow(#555);
+  @include ambient-shadow(#555);
 
-	.section { margin-bottom: -50px; }
+  .section { margin-bottom: -50px; }
 
-	.footer-logo {
-		margin: 0 auto;
-		text-align: center;
-		padding-bottom: 20px;
-	}
+  .footer-logo {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+  }
 
-	.value-multiplier {
-	  margin-bottom: .5rem;
-	  color: #263238;
-	  //color: #BOBEC5;
-	}
+  .value-multiplier {
+    margin-bottom: .5rem;
+    color: #263238;
+    //color: #BOBEC5;
+  }
 
-	.value-heading {
-	  margin-bottom: .3rem;
-	  text-align: center;
-	}
+  .value-heading {
+    margin-bottom: .3rem;
+    text-align: center;
+  }
 
-	.value-description {
-	  font-weight: 300;
+  .value-description {
+    font-weight: 300;
 
-	  button {width: 150px;}
+    button {width: 150px;}
 
-	  i {
-	  	font-size: 20px;
-	  	//vertical-align: middle;
-	  }
-	}
+    i {
+      font-size: 20px;
+      //vertical-align: middle;
+    }
+  }
 
-	#footer-divider {
-		width: 30%;
-		opacity: 0.3;
-	}
+  #footer-divider {
+    width: 30%;
+    opacity: 0.3;
+  }
 
-	.footer {
-		padding: 0 20px;
-		padding-top: 50px;
-		padding-bottom: 20px;
-	}
+  .footer {
+    padding: 0 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
 
-	.button {
-		@include ambient-shadow(#444);
-	}
+  .button {
+    @include ambient-shadow(#444);
+  }
 
-	.copyright {
-		text-align: center;
-	}
+  .copyright {
+    text-align: center;
+  }
 }
