@@ -44,7 +44,7 @@
   }
 
   .button {
-    @include ambient-shadow(#444);
+    @include surface-shadow($accent-color-darkest);
   }
 
   .copyright {

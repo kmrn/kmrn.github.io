@@ -154,22 +154,13 @@
 
         .button {
           margin-left: 20px;
+          @include surface-shadow($accent-color-darkest);
         }
       }
     }
 
     .posts {
       padding-left: 40px;
-
-    //   .post-link-entry {
-    //     .post-link {
-    //       vertical-align: middle;
-    //     }
-    //     .link-divider {
-    //       vertical-align: middle;
-    //       font-size: 150%;
-    //     }
-    //   }
     }
   }
 }

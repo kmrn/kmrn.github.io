@@ -39,6 +39,7 @@ $primary-color-darkest: #263238;
 $accent-color-lighter: #FF80AB;
 $accent-color: #FF4081;
 $accent-color-darker: #F50057;
+$accent-color-darkest: #C51162;
 
 
 /* Grid
@@ -153,9 +154,10 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a { 
-  color: #1EAEDB; }
+  color: $accent-color;
+  text-decoration: none; }
 a:hover { 
-  color: #0FA0CE; }
+  color: $accent-color-darker; }
 
 
 /* Buttons 

@@ -31,20 +31,10 @@ footer {
 		color: #e0e0e0;
 	}
 
-	a { color: $accent-color-lighter; }
-	a:hover { color: $accent-color; }
-
 	background-color: #455a64;
 	padding: 0;
 	margin: 0;
 }
-
-a { 
-	color: $accent-color;
-	text-decoration: none;
-}
-
-a:hover { color: $accent-color-darker; }
 
 
 //Lists
@@ -55,35 +45,7 @@ ol {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-
-
-	&%default-ul {
-		list-style-type: disc;
-		margin-bottom: $base-spacing / 2;
-		padding-left: $base-spacing;
-	}
-
-	&%default-ol {
-		list-style-type: decimal;
-		margin-bottom: $base-spacing / 2;
-		padding-left: $base-spacing;
-	}
 }
-
-dl {
-	margin-bottom: $base-spacing / 2;
-
-	dt {
-		font-weight: bold;
-		margin-top: $base-spacing / 2;
-	}
-
-	dd {
-		margin: 0;
-	}
-}
-
-
 
 
 
@@ -94,7 +56,9 @@ dl {
 
 
 	.main-container {
-		padding: 40px 0;
+		margin: 0 auto;
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 
 	@import "header-style";
