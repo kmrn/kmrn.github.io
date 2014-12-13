@@ -2,7 +2,7 @@
 layout: post
 title:  "Another Example"
 date:   2014-11-27 12:58:36
-categories: jekyll update
+categories: blog jekyll update
 author: Kamran Payne
 ---
 

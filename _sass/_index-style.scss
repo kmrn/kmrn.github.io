@@ -138,18 +138,38 @@
 
   .posts-container {
 
-    .posts {
-      padding-left: 40px;
+    .frontpage-post {
+      padding: 0 2.5%;
 
-      .post-link-entry {
-        .post-link {
-          vertical-align: middle;
+      .post-block {
+        @include ambient-shadow($primary-color-light);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #f9f9f9;
+        background-color: rgba($primary-color-medium, 0.2);
+
+        .post-title {
+          margin-bottom: -20px;
         }
-        .link-divider {
-          vertical-align: middle;
-          font-size: 150%;
+
+        .button {
+          margin-left: 20px;
         }
       }
     }
+
+    // .posts {
+    //   padding-left: 40px;
+
+    //   .post-link-entry {
+    //     .post-link {
+    //       vertical-align: middle;
+    //     }
+    //     .link-divider {
+    //       vertical-align: middle;
+    //       font-size: 150%;
+    //     }
+    //   }
+    // }
   }
 }
