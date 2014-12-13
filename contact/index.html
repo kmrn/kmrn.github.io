@@ -10,30 +10,31 @@ This page will appear when you visit /contact/ -->
     <div class="row">
       <h3>Contact Me</h3>
       <h6>Wanna talk?</h6>
+      <p>
+        It's generally pretty easy to get a hold of me. You can find me on Twitter <a href="https://twitter.com/kamranpayne">@KamranPayne</a>, Google Plus <a href="https://plus.google.com/103628236655675054899">over here</a>, or send me an email at <a href="mailto:mail@kamranpayne.com">mail@kamranpayne.com</a>. For your added convenience, there's also a contact form right there <i class="fa fa-arrow-down"></i>.
+        <br>
+      </p>
+
       <div class="form-wrapper">
         <div class="contact-form-container">
           <h4>Form of Contacting</h4>
           <form action="https://getsimpleform.com/messages?form_api_token=1b8806590dc196f22d975d6ebccc4662" method="post" class="contact-form">
-            <div class="row">
+            <div class="row"> 
               <div class="six columns">
-                <label for="ContactEmailInput">Your email</label>
-                <input class="u-full-width" placeholder="test@mailbox.com" id="ContactEmailInput" type="email">
+                <label for="ContactNameInput">Your name</label>
+                <input class="u-full-width" placeholder="What do I call you?" id="ContactNameInput" type="text" name="name">
               </div>
               <div class="six columns">
-                <label for="ContactRecipientInput">Reason for contacting</label>
-                <select class="u-full-width">
-                  <option value="Option 1">Questions</option>
-                  <option value="Option 2">Admiration</option>
-                  <option value="Option 3">Can I get your number?</option>
-                </select>
+                <label for="ContactEmailInput">Your email</label>
+                <input class="u-full-width" placeholder="you@whatever.com" id="ContactEmailInput" type="email" name="email">
               </div>
             </div>
             <label for="ContactMessage">Message</label>
-            <textarea class="u-full-width" placeholder="Hi Dave …" id="ContactMessage"></textarea>
-            <label class="contact-send-yourself-copy">
+            <textarea name="message" class="u-full-width" placeholder="What's up?" id="ContactMessage"></textarea>
+            <!-- <label class="contact-send-yourself-copy">
               <input type="checkbox">
               <span class="label-body">Send a copy to yourself</span>
-            </label>
+            </label> -->
             <input class="button-primary" value="Submit" type="submit">
           </form>
         </div>

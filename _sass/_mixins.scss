@@ -55,9 +55,9 @@
 
 //Shadows
 @mixin ambient-shadow($color) {
-  -webkit-box-shadow: 0 0 5px 2px $color;
-  -moz-box-shadow: 0 0 5px 2px $color;
-  box-shadow: 0 0 5px 2px $color;
+  -webkit-box-shadow: 0 2px 5px 2px $color;
+  -moz-box-shadow: 0 2px 5px 2px $color;
+  box-shadow: 0 2px 5px 2px $color;
 }
 
 @mixin key-shadow($color) {
