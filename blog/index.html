@@ -10,19 +10,13 @@ This page will appear when you visit /blog -->
     <div class="row">
       <h3>Blag.</h3>
       <h6>Written by me, read by nobody.</h6>
-      <div class="posts">
-        <ul>
-          {% for post in site.posts %}
-            {% if post.layout == "project" %}
-              <!-- do nothing -->
-            {% else if %}
-              <li class="post-link-entry">
-                <a href="{{ post.url }}" class="post-link">{{ post.date | date_to_string }} <span class="link-divider">////</span> {{ post.title }}</a>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
+      <ul class="posts">
+        {% for post in site.categories.blog %}
+          <li class="post-link-entry">
+            <a href="{{ post.url }}" class="post-link">{{ post.date | date_to_string }} <span class="link-divider">////</span> {{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
   </section>
 </div>
