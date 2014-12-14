@@ -2,11 +2,28 @@
 //styles for /projects/ go here
 
 
-.featured-image {
-  @include ambient-shadow(#555);
+.kracker-colors {
+  // margin-left: 20px;
+  // padding-right: 20px;
+  @extend .u-full-width;
 
-	height: 400px;
-  width: 100%;
-  //position: absolute;
-  z-index: 1;
+  .title,
+  .bg-lightest,
+  .bg-light,
+  .bg-medium,
+  .bg-dark,
+  .bg-darkest,
+  .p-lighter,
+  .p,
+  .p-darker { text-align: center; }
+
+  .bg-lightest { background-color: $primary-color-lightest; }
+  .bg-light { background-color: $primary-color-light; }
+  .bg-medium { background-color: $primary-color-medium; }
+  .bg-dark { background-color: $primary-color-dark; }
+  .bg-darkest { background-color: $primary-color-darkest; }
+
+  .p-lighter { background-color: $accent-color-lighter; }
+  .p { background-color: $accent-color; }
+  .p-darker { background-color: $accent-color-darker; }
 }
