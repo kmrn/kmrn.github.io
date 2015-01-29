@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 date: "2015-01-29 15:13:29 -0500"
 categories: blog
@@ -26,4 +26,3 @@ This blog is pretty much meant for the following stuff:
     
     
 This blog is pretty much a way for me to get thoughts on paper. It also helps me become a better typist I guess. Yeah sure, lets go with that.
-
