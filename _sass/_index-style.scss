@@ -54,14 +54,14 @@
       @media (max-width: 549px) {
         margin: 0;
       }
-      @include key-shadow(#a5a5a5);
+      @include ambient-shadow(#a5a5a5);
 
       .projects-container li {
         display: inline;
         list-style: none;
         padding: 0;
         margin: 0;
-        width: 100%;
+        //max-width: 100%;
         font-size: 0;
       }
 
@@ -104,11 +104,19 @@
         .button {
           vertical-align: middle;
           color: #fff;
+
+          &:hover {
+            @extend .button-primary;
+            transition: all 0.15s ease-in;
+            -ms-transition: all 0.15s ease-in;
+            -moz-transition: all 0.15s ease-in;
+            -webkit-transition: all 0.15s ease-in;
+          }
         }
       }
 
       .project-action:hover { 
-        opacity: 1.0;
+        
       }
 
       // .overlay {
