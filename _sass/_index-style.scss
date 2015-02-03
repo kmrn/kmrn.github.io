@@ -54,7 +54,7 @@
       @media (max-width: 549px) {
         margin: 0;
       }
-      @include ambient-shadow(#555);
+      @include key-shadow(#a5a5a5);
 
       .projects-container li {
         display: inline;
