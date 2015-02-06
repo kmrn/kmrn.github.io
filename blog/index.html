@@ -8,13 +8,21 @@ This page will appear when you visit /blog -->
 <div class="main-container">
   <section class="container posts-container">
     <div class="row">
-      <h3>Blag.</h3>
-      <h6>Written by me, read by nobody.</h6>
-      <ul class="posts">
-        {% for post in site.categories.blog %}
-          <li class="post-link-entry">
-            <a href="{{ post.url }}" class="post-link">{{ post.date | date_to_string }} <span class="link-divider">////</span> {{ post.title }}</a>
+      <div class="blog-title">
+        <h3>&mdash;  Blag  &mdash;</h3>
+        <h6>Written by me, read by nobody.</h6>
+      </div>
+      <hr />
+      <ul class="posts-container">
+          {% for post in site.categories.blog %}
+          <li class="frontpage-post">
+            <div class="post-block">
+              <h5 class="post-title">{{ post.title }}</h5>
+              <p>{{ post.excerpt }}</p>
+              <a href="{{ post.url }}" class="button button-primary">Read</a>
+            </div>
           </li>
+          <br>
         {% endfor %}
       </ul>
     </div>

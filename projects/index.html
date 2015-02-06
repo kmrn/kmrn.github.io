@@ -14,21 +14,26 @@ This page will appear when you visit /projects/ -->
         <ul>
           {% for post in site.categories.projects %}
             <li class="post-link-entry">
-              <a href="{{ post.url }}" class="post-link">{{ post.date | date_to_string }} <span class="link-divider">////</span> {{ post.title }}</a>
+              <a href="{{` post.url }}" class="post-link">{{ post.date | date_to_string }} <span class="link-divider">////</span> {{ post.title }}</a>
             </li>
           {% endfor %}
         </ul>
       </div>
     </div>
   </section> -->
-  <section class="latest-container container">
+  <section class="container">
     <div class="row">
-      <ul class="projects-container">
-        {% for post in site.categories.projects %}<li class="project" style="background-image: url({{post.image}});">
+      <div class="blog-title">
+        <h3>&mdash; Projects &mdash;</h3>
+        <h6>Here's what I've created.</h6>
+        <hr />
+      </div>
+      <ul class="main-projects-container">
+        {% for post in site.categories.projects %}<div class="one-third column"><li class="main-project one-third column" style="background-image: url({{post.image}});">
             <div class="project-action">
               <h5 class="project-title">{{ post.short-title }}</h5>
               <a href="{{ post.url }}" class="button">View</a>
-            </div></li>{% endfor %}
+            </div></li></div>{% endfor %}
       </ul>
     </div>
   </section>

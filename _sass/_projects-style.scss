@@ -1,6 +1,60 @@
 //_projects.scss
 //styles for /projects/ go here
 
+.blog-title {
+  text-align: center;
+}
+
+.main-projects-container {
+  margin: 0 auto;
+  padding: 0 2.5%;
+  text-align: center;
+
+
+  .main-project {
+    
+    .project-action {
+      height: 100%;
+      width: 100%;
+      background-color: rgba($primary-color-darkest, 0.7);
+      position: relaitve;
+
+      .project-title { padding-top: 40px; }
+      
+      .project-title,
+      .button {
+        vertical-align: middle;
+        color: #fff;
+
+        &:hover {
+          @extend .button-primary;
+          transition: all 0.15s ease-in;
+          -ms-transition: all 0.15s ease-in;
+          -moz-transition: all 0.15s ease-in;
+          -webkit-transition: all 0.15s ease-in;
+        }
+      }
+    }
+
+    height: 250px;
+    width: 100%;
+
+    transition: all 0.15s ease-in;
+    -ms-transition: all 0.15s ease-in;
+    -moz-transition: all 0.15s ease-in;
+    -webkit-transition: all 0.15s ease-in;  
+    @include ambient-shadow(#aaa);
+
+    &:hover {
+      @include key-shadow(#888);
+      transition: all 0.15s ease-in;
+      -ms-transition: all 0.15s ease-in;
+      -moz-transition: all 0.15s ease-in;
+      -webkit-transition: all 0.15s ease-in;
+    }
+  }
+
+}
 
 .kracker-colors {
   // margin-left: 20px;
