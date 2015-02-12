@@ -19,7 +19,7 @@ title: It's me, KP.
     <hr class="divider" />
     <section class="latest-container">
       <div class="row">
-        <h3>My Latest Projects</h3>
+        <h3 class="blog-title">&mdash; My Latest Projects &mdash;</h3>
         <ul class="projects-container">
           {% for post in site.categories.projects limit:4 %}<li class="project" style="background-image: url({{post.image}});">
               <div class="project-action">
@@ -32,7 +32,7 @@ title: It's me, KP.
     <hr class="divider" />
     <section class="">
       <div class="row"> 
-        <h3>Light Reading</h3>
+        <h3 class="blog-title">&mdash; Light Reading &mdash;</h3>
         <ul class="posts-container">
           {% for post in site.categories.blog limit:3 %}
             <li class="frontpage-post">
