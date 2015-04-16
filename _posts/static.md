@@ -1,0 +1,14 @@
+---
+layout: post
+time: 2015-04-16
+categories: blog
+title: Static Apps: A JS Adventure
+---
+
+I read a few articles recently that told me to do stuff differently than how I've been doing them. It was right and my static sites are cooler now.
+
+The biggest thing that really helped learn a bunch in the past few weeks was the [Static Apps field guide](http://www.staticapps.org/). This was something I was researching because I was left really confused after I was talking to a developer at Code4GoodPBC and he told me that "Rails was originally made for fast prototyping, the only reason these people use it for production apps is because they're crazy." I wasn't sure what to make of that. Sure enough after some digging I found that a lot of developers had the same idea.
+
+After reading through staticapps.org I started using a templating engine built on NodeJS called [HarpJS](http://harpjs.org). HarpJS is really rad because it includes a development server and an interpreter for a bunch of different preprocessing languages like Sass, LESS, CoffeeScript, EJS, Jade, and others. This really simplified my workflow so making a static website takes less time to get started now. Starting another project is just a quick `harp init` away.
+
+All that is totally rad and you should check it out.
