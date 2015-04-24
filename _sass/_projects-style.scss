@@ -85,4 +85,8 @@
 .portfolio-links {
   text-align: center;
   padding: 30px 0;
+  
+  .button-primary {
+    @include ambient-shadow(#aaa);
+  }
 }
