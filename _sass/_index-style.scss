@@ -69,7 +69,7 @@
 
         width: 50%;
         height: 50vw;
-        //@include calc(max-width, '50% - 50px')
+        background-size: cover;
 
         @media not -webkit-device-pixel-ratio {
           //margin-right: 17px;
