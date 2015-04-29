@@ -13,21 +13,21 @@ This is a blog. It's my blog. Do people read it? Hell if I know. It's just a blo
 This blog is pretty much meant for the following stuff:
 
 <ul>
-<li>Developer Diaries</li>
+    <li>Developer Diaries</li>
     <ul>
         <li>Status of ongoing projects</li>
         <li>Discussing challenges I may face developing something.</li>
         <li>Sharing technologies.</li>
         <li>That sort of thing.</li>
     </ul>
-<li>Bloggy stuff</li>
+    <li>Bloggy stuff</li>
     <ul>
         <li>stuff you would find on the blogs of other stuff</li>
         <li>maybe I need to explain a tool I made</li>
         <li>maybe I want to rant about something</li
         <li>whatever</li>
     </ul>
-<li>Personal stuff maybe?</li>
+    <li>Personal stuff maybe?</li>
     <ul><li>probably not</li></ul>
 </ul>
     
