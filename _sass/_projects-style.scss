@@ -10,6 +10,15 @@
   padding: 0 2.5%;
   text-align: center;
 
+  @media (min-width: 650px) {
+    .main-project-column {
+      float: left;
+      width: 28.3333333%;
+      padding: 0 2.5%;
+    }
+  }
+
+  .main-project-column { margin: 40px 0; }
 
   .main-project {
     background-size: cover;

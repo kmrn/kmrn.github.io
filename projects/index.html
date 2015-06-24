@@ -29,11 +29,16 @@ This page will appear when you visit /projects/ -->
         <hr />
       </div>
       <ul class="main-projects-container">
-        {% for post in site.categories.projects %}<div class="one-third column"><li class="main-project one-third column" style="background-image: url({{post.image}});">
-            <div class="project-action">
-              <h5 class="project-title">{{ post.short-title }}</h5>
-              <a href="{{ post.url }}" class="button">View</a>
-            </div></li></div>{% endfor %}
+        {% for post in site.categories.projects %}
+          <div class="main-project-column">
+            <li class="main-project" style="background-image: url({{post.image}});">
+              <div class="project-action">
+                <h5 class="project-title">{{ post.short-title }}</h5>
+                <a href="{{ post.url }}" class="button">View</a>
+              </div>
+            </li>
+          </div>
+        {% endfor %}
       </ul>
     </div>
   </section>
