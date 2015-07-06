@@ -64,9 +64,9 @@ ol {
 
 	.post-content {
 		img {
-			max-width: 80%;
+			max-width: 800px;
 			margin: 0 auto;
-			@include ambient-shadow(#666);
+			@include ambient-shadow(rgba(0,0,0,0.5));
 		}
 	}
 
