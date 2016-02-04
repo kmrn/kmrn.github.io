@@ -3,7 +3,7 @@ published: true
 layout: project
 title: Dogfighters
 "short-title": Dogfighters
-date: 2015-06-22
+date: 2016-02-04
 categories: projects
 image: /images/dogfighters_thumb.png
 ---
