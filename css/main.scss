@@ -76,6 +76,26 @@ ol {
 		}
 	}
 
+	.page-navigation {
+	  margin: 0 auto;
+		max-width: 700px;
+	  overflow: hidden;
+
+
+		.button {
+		  width: auto;
+			margin: 20px;
+		}
+
+		.prev {
+			float: left;
+		}
+
+		.next {
+			float: right;
+		}
+	}
+
 	.main-container {
 		margin: 0 auto;
 		padding-top: 40px;

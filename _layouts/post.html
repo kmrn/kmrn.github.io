@@ -9,6 +9,29 @@ layout: default
 			{{ content }}
 		</article>
 		<hr class="comments-divider">
+		<div class="page-navigation">
+			{% for post in site.categories.blog %}
+        {% if post.url == page.url %}
+            {% assign post_index0 = forloop.index0 %}
+            {% assign post_index1 = forloop.index %}
+        {% endif %}
+	    {% endfor %}
+	    {% for post in site.categories.blog %}
+	        {% if post_index0 == forloop.index %}
+	            {% assign next_post = post %}
+	        {% endif %}
+	        {% if post_index1 == forloop.index0 %}
+	            {% assign prev_post = post %}
+	        {% endif %}
+	    {% endfor %}
+	    {% if prev_post %}
+	      <a class="prev button" href="{{ prev_post.url }}">&laquo; {{ prev_post.title }}</a>
+	    {% endif %}
+			{% if next_post %}
+        <a class="next button" href="{{ next_post.url }}">{{ next_post.title }} &raquo;</a>
+	    {% endif %}
+		</div>
+		<hr class="comments-divider">
 		<div id="disqus_thread"></div>
 	</div>
 </div>
@@ -16,7 +39,7 @@ layout: default
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = 'krackers';
-    
+
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
