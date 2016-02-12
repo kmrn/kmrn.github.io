@@ -31,13 +31,13 @@ title: It's me, KP.
     </section>
     <hr class="divider" />
     <section class="">
-      <div class="row"> 
+      <div class="row">
         <h3 class="blog-title">&mdash; Light Reading &mdash;</h3>
         <ul class="posts-container">
           {% for post in site.categories.blog limit:3 %}
             <li class="frontpage-post">
               <div class="post-block">
-                <h5 class="post-title">{{ post.title }}</h5>
+                <div class="post-title"><p class="post-date">{{ post.date | date: '%B %d, %Y' }}</p><h4>{{ post.title }}</h4></div>
                 <p>{{ post.excerpt }}</p>
                 <a href="{{ post.url }}" class="button button-primary">Read</a>
               </div>

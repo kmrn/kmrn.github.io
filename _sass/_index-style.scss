@@ -30,14 +30,14 @@
       .bio-header {
         padding: 0 2.5%;
       }
-    
+
       .bio-text {
         // text-align: center;
       }
     }
   }
 
-  .divider { 
+  .divider {
     width: 80%;
     padding-bottom: 20px;
   }
@@ -80,7 +80,7 @@
           height: 25vw;
           @include calc(min-width, '25% - 4.25px');
         }
-        
+
         max-height: 250px;
         margin-bottom: 0;
         display: inline-block;
@@ -99,7 +99,7 @@
         position: relaitve;
 
         .project-title { padding-top: 40px; }
-        
+
         .project-title,
         .button {
           vertical-align: middle;
@@ -115,8 +115,8 @@
         }
       }
 
-      .project-action:hover { 
-        
+      .project-action:hover {
+
       }
 
       // .overlay {
@@ -132,7 +132,7 @@
       //  height:100%;
       //  display: none;
       //  z-index:0;
-      //  background-color: rgba($accent-color, 0.4); 
+      //  background-color: rgba($accent-color, 0.4);
 
       // }
 
@@ -155,12 +155,25 @@
         padding-bottom: 20px;
         background-color: #f9f9f9;
         background-color: rgba($primary-color-medium, 0.2);
+        text-align: justify;
 
         .post-title {
-          margin-bottom: -20px;
+          //margin-bottom: -20px;
+          margin-bottom: 10px;
+
+          h4 {
+            margin-top: -25px;
+          }
+
+          .post-date {
+            opacity: 0.7;
+          }
         }
 
+
+
         .button {
+          margin-top: 5px;
           margin-left: 20px;
           @include surface-shadow($accent-color-darkest);
         }

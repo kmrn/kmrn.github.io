@@ -3,7 +3,7 @@ layout: default
 ---
 
 <!-- /blog/index.html
-This page will appear when you visit /blog --> 
+This page will appear when you visit /blog -->
 
 <div class="main-container">
   <section class="container posts-container">
@@ -17,7 +17,7 @@ This page will appear when you visit /blog -->
           {% for post in site.categories.blog %}
           <li class="frontpage-post">
             <div class="post-block">
-              <h5 class="post-title">{{ post.title }}</h5>
+              <div class="post-title"><p class="post-date">{{ post.date | date: '%B %d, %Y' }}</p><h4>{{ post.title }}</h4></div>
               <p>{{ post.excerpt }}</p>
               <a href="{{ post.url }}" class="button button-primary">Read</a>
             </div>
