@@ -3,12 +3,12 @@
 
 # Site settings
 title: Kamran's Kracker Shack
-email: mail@kamranpayne.com
+email: hello@kamranpayne.com
 description: "How did I get here?"
 baseurl: "/"
-url: "https://ron953.github.io"
+url: "http://kamranpayne.com"
 twitter_username: kamranpayne
-github_username:  ron953
+github_username:  kmrn
 
 # Build settings
 markdown: kramdown
@@ -27,3 +27,6 @@ defaults:
       layout: "project"
       author: "Kamran Payne"
       category: "project"
+
+paginate: 10
+paginate_path: "/blog/page:num/"
