@@ -10,7 +10,7 @@ image: /images/dogfighters_thumb.png
 
 <div class="portfolio-links">
     <a href="http://kamranpayne.com/dogfighters" class="button button-primary">Go to this Project</a>
-    <a href="https://github.com/ron953/dogfighters/" class="button">View Source</a>
+    <a href="https://github.com/kmrn/dogfighters/" class="button">View Source</a>
 </div>
 
 This past weekend I tried to make something different. I think it went alright. I wanted to get more into game development and make something really cool that I could potentially make into a bigger project further down the road. I thought some sort of multiplayer casual game would be cool so that's what I made.
