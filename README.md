@@ -1,6 +1,6 @@
 [KamranPayne.com](http://ron953.github.io)
 ================
-###Also at ron953.github.io
+###Also at kmrn.github.io
 
 My personal portfolio website.
 
