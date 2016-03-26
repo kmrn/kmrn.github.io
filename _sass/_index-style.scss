@@ -150,12 +150,13 @@
       padding: 0 2.5%;
 
       .post-block {
-        @include ambient-shadow($primary-color-light);
+        @include small-shadow(rgba(0,0,0,0.3));
         padding-top: 20px;
         padding-bottom: 20px;
         background-color: #f9f9f9;
         background-color: rgba($primary-color-medium, 0.2);
         text-align: justify;
+        margin-bottom: -20px;
 
         .post-title {
           //margin-bottom: -20px;

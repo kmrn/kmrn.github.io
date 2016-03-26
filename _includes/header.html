@@ -2,14 +2,15 @@
   <div class="container">
     <div class="row">
       <div class="title">
-        <h2 class="my-name">Kamran's Kracker Shack</h2>
+        <h1 class="my-name"><a href="/">Kamran's Kracker Shack</a></h1>
       </div>
       <div class="navbar">
         <ul class="navlist">
-          <li><a class="button" href="/">Home</a></li>
-          <li><a class="button" href="/blog/">Blog</a></li>
-          <li><a class="button" href="/projects/">Projects</a></li>
-          <li><a class="button" href="/contact/">Contact</a></li>
+          {% assign current = page.url | downcase | split: '/' %}
+          <!-- <li><a class="button {% if page.url == '/about.html' %}active{% endif %}" href="/">Home</a></li> -->
+          <li><a class="button {% if page.url == '/blog/' %}active{% endif %}" href="/blog/">Blog</a></li>
+          <li><a class="button {% if page.url == '/projects/' %}active{% endif %}" href="/projects/">Projects</a></li>
+          <li><a class="button {% if page.url == '/contact/' %}active{% endif %}" href="/contact/">Contact</a></li>
         </ul>
       </div>
     </div>

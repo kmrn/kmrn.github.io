@@ -60,6 +60,12 @@
   box-shadow: 0 2px 5px 2px $color;
 }
 
+@mixin small-shadow($color) {
+  -webkit-box-shadow: 0 1px 3px 1px $color;
+  -moz-box-shadow: 0 1px 3px 1px $color;
+  box-shadow: 0 1px 3px 1px $color;
+}
+
 @mixin key-shadow($color) {
   -webkit-box-shadow: 0 5px 10px 5px $color;
   -moz-box-shadow: 0 5px 10px 5px $color;
