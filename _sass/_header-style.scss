@@ -2,7 +2,7 @@
 //styles for headers go here
 
 header {
-  @include ambient-shadow(#555);
+  @include small-shadow(rgba(0,0,0,0.4));
   display: block;
   position: relative;
   z-index: 99;
@@ -43,6 +43,12 @@ header {
     margin-bottom: -20px;
     max-width: 700px;
   }
+}
+
+.post-divider {
+  opacity: 0.2;
+  padding: 20px 0;
+  max-width: 350px;
 }
 
 .active {
