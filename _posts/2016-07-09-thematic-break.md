@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-date: "2016-07-09 19:00:00 -0500"
+date: "2016-07-09"
 categories: blog
 title: The Horizontal Rule, Horizontal <em>Rules</em>
 ---
