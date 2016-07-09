@@ -3,16 +3,14 @@ published: true
 layout: post
 date: "2015-07-09 19:00:00 -0500"
 categories: blog
-title: The Horizontal Rule, Horizontal *Rules*
+title: The Horizontal Rule, Horizontal <em>Rules</em>
 ---
 
-***
-***
-***
+<hr>
+<hr>
 You could say its my favorite HTML tag.
-***
-***
-***
+<hr>
+<hr>
 
 In some situations you have two different blocks of content and you’d like to keep them separate. Some additional padding would certainly do the trick but sometimes you just really want something with a little more… *something*.
 
