@@ -10,6 +10,7 @@
   padding: 0 2.5%;
   text-align: center;
 
+
   @media (min-width: 650px) {
     .main-project-column {
       float: left;
@@ -71,15 +72,7 @@
   // padding-right: 20px;
   @extend .u-full-width;
 
-  .title,
-  .bg-lightest,
-  .bg-light,
-  .bg-medium,
-  .bg-dark,
-  .bg-darkest,
-  .p-lighter,
-  .p,
-  .p-darker { text-align: center; }
+  th, td { text-align: center; }
 
   .bg-lightest { background-color: $primary-color-lightest; }
   .bg-light { background-color: $primary-color-light; }
@@ -109,4 +102,8 @@
   // @include ambient-shadow(#aaa);
   max-width: 700px;
   margin: 0 auto;
+
+  img {
+    max-width: 700px;
+  }
 }
