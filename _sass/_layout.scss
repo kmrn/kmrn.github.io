@@ -26,6 +26,12 @@
   margin-bottom: 5px;
 }
 
+.page-content {
+  a {
+    text-decoration: underline;
+  }
+}
+
 
 
 /***
@@ -63,10 +69,6 @@ Index
   padding-bottom: 20px;
 
   .projects-container {
-    //margin: 0 auto;
-    @media not -webkit-device-pixel-ratio {
-        //margin-left: 17px;
-      }
 
     @media (max-width: 549px) {
       margin: 0;
@@ -78,7 +80,6 @@ Index
       list-style: none;
       padding: 0;
       margin: 0;
-      //max-width: 100%;
       font-size: 0;
     }
 
@@ -88,17 +89,13 @@ Index
       height: 50vw;
       background-size: cover;
 
-      @media not -webkit-device-pixel-ratio {
-        //margin-right: 17px;
-      }
-
       @media (min-width: 750px) {
         width: 25%;
         height: 25vw;
         @include calc(min-width, '25% - 4.25px');
       }
 
-      max-height: 500px;
+      max-height: 400px;
       margin-bottom: 0;
       display: inline-block;
       font-size: 0;
@@ -115,7 +112,7 @@ Index
       background-color: rgba($primary-color-darkest, 0.7);
       position: relaitve;
 
-      .project-title { padding-top: 60%; }
+      .project-title { padding-top: 7rem; }
 
       .project-title,
       .button {
@@ -131,34 +128,37 @@ Index
         }
       }
     }
-
-    .project-action:hover {
-
-    }
-
-    // .overlay {
-    //   position: relative;
-    // }
-
-    // .overlay:before {
-    //  position: absolute;
-    //  content:" ";
-    //  top:0;
-    //  left:0;
-    //  width:100%;
-    //  height:100%;
-    //  display: none;
-    //  z-index:0;
-    //  background-color: rgba($accent-color, 0.4);
-
-    // }
-
-    // .overlay:hover:before {
-    //  display: block;
-    // }
-
-    //.project .overlay .project-action .project-title .button { position: relative; }
   }
+}
+
+.latest-posts-container {
+  padding-top: 50px;
+}
+
+.post-divider {
+  max-width: 300px;
+}
+
+.frontpage-post {
+  list-style: none;
+  padding-top: 20px;
+
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.post-excerpt {
+  text-align: justify;
+}
+
+.post-date {
+  margin-top: -15px;
+}
+
+.post-link {
+  margin-top: -15px;
+  margin-bottom: 10px;
+  float: right;
+  text-decoration: underline;
 }
 
 

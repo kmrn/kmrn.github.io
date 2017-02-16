@@ -3,12 +3,10 @@ published: true
 layout: post
 date: "2016-07-09"
 categories: blog
-title: The Horizontal Rule, Horizontal <em>Rules</em>
+title: The Horizontal Rule Horizontal Rules
 ---
 
-<hr>
-<hr>
-You could say its my favorite HTML tag.
+You could say its my favorite HTML tag. Why is it so good? Why do I like it so much? Am I even a real designer? Find out!
 <hr>
 <hr>
 

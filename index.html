@@ -31,22 +31,26 @@ layout: default
         </ul>
       </div>
     </section>
-    <section class="">
-      <div class="row">
-        <h3 class="blog-title u-text-center">Light Reading</h3>
-        <ul class="posts-container">
-          {% for post in site.categories.blog limit:3 %}
-            <li class="frontpage-post">
-              <div class="post-block">
-                <div class="post-title"><p class="post-date">{{ post.date | date: '%B %d, %Y' }}</p><h4>{{ post.title }}</h4></div>
-                <p>{{ post.excerpt }}</p>
-                <a href="{{ post.url }}" class="button button-primary">Read</a>
+  </div>
+  <div class="container">
+    <section class="latest-posts-container">
+      <h3 class="blog-title u-text-center">Light Reading</h3>
+      <ul class="posts-container">
+        {% for post in site.categories.blog limit:3 %}
+          <li class="frontpage-post row">
+            <div class="post-block">
+              <div class="three columns">
+                <div class="post-title"><h5>{{ post.title }}</h5><p class="post-date">{{ post.date | date: '%B %d, %Y' }}</p></div>
               </div>
-            </li>
-            <br>
-          {% endfor %}
-        </ul>
-      </div>
+              <div class="nine columns post-excerpt">
+                {{ post.excerpt }}
+                <a href="{{ post.url }}" class="post-link">Continue Reading &rarr;</a>
+              </div>
+            </div>
+          </li>
+          <br>
+        {% endfor %}
+      </ul>
     </section>
   </div>
 </div>
