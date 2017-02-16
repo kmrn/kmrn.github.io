@@ -1,5 +1,30 @@
 ---
 layout: page
-title: Blog
+title: Words Blog
 permalink: /blog/
 ---
+
+<!-- /blog/index.html
+This page will appear when you visit /blog -->
+
+<div class="main-container">
+  <div class="u-text-center">
+    <h6>Written by me, read by nobody.</h6>
+  </div>
+  <section class="container posts-container">
+    <div class="row">
+      <ul class="posts-container">
+          {% for post in site.categories.blog %}
+          <li class="frontpage-post">
+            <div class="post-block">
+              <div class="post-title"><p class="post-date">{{ post.date | date: '%B %d, %Y' }}</p><h4>{{ post.title }}</h4></div>
+              <p>{{ post.excerpt }}</p>
+              <a href="{{ post.url }}" class="button button-primary">Read</a>
+            </div>
+          </li>
+          <br>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+</div>
