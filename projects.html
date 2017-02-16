@@ -12,19 +12,19 @@ This page will appear when you visit /projects/ -->
     <h6>Here's what I've created.</h6>
   </div>
   <section class="container">
-    <div class="row">
-      <ul class="main-projects-container">
-        {% for post in site.categories.projects %}
-          <div class="main-project-column">
-            <li class="main-project" style="background-image: url({{post.image}});">
+    <ul class="main-projects-container">
+      {% for post in site.categories.projects %}
+        <div class="row">
+          <li class="project-panel" style="background-image: url({{post.image}});">
+            <a href="{{ post.url }}">
               <div class="project-action">
-                <h5 class="project-title">{{ post.short-title }}</h5>
-                <a href="{{ post.url }}" class="button">View</a>
+                <h2 class="project-title">{{ post.short-title }}</h2>
+                <!-- <p>{{ post.excerpt }}</p> -->
               </div>
-            </li>
-          </div>
-        {% endfor %}
-      </ul>
-    </div>
+            </a>
+          </li>
+        </div>
+      {% endfor %}
+    </ul>
   </section>
 </div>
