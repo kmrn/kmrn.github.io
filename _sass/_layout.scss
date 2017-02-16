@@ -1,0 +1,176 @@
+
+.black { color: #000; }
+.gray { color: #999; }
+
+.row {
+  padding: 15px;
+}
+
+.site-title {
+  padding-top: 40px;
+  padding-bottom: -60px;
+
+  .site-title-link {
+    font-size: 7.0rem;
+    color: #000;
+    line-height: normal;
+  }
+}
+
+.site-nav {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 3.0rem;
+  margin-top: -60px;
+  padding-bottom: 10px;
+  border-bottom: #999 dashed 1px;
+  margin-bottom: 5px;
+}
+
+.page-content {
+  a {
+    text-decoration: underline;
+  }
+}
+
+.active {
+  text-decoration: underline;
+}
+
+
+
+/***
+Index
+***/
+
+.home {
+  margin-top: 30px;
+}
+
+.bio-container {
+  padding-bottom: 30px;
+
+  .bio-image-container {
+    text-align: center;
+    padding-bottom: 30px;
+
+    .bio-image {
+      margin: 0 auto;
+
+      background-color: $accent-color;
+      width: 100%;
+      max-width: 300px;
+
+      @include ambient-shadow(rgba(0, 0, 0, 0.3));
+    }
+  }
+
+  .bio-text-container {
+    text-align: justify;
+  }
+}
+
+.latest-container {
+  padding-bottom: 20px;
+
+  .projects-container {
+
+    @media (max-width: 549px) {
+      margin: 0;
+    }
+    @include ambient-shadow(#a5a5a5);
+
+    .projects-container li {
+      display: inline;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0;
+    }
+
+    .project {
+
+      width: 50%;
+      height: 50vw;
+      background-size: cover;
+
+      @media (min-width: 750px) {
+        width: 25%;
+        height: 25vw;
+        @include calc(min-width, '25% - 4.25px');
+      }
+
+      max-height: 400px;
+      margin-bottom: 0;
+      display: inline-block;
+      font-size: 0;
+      text-align: center;
+      vertical-align: middle;
+      position: relative;
+
+      vertical-align: middle;
+    }
+
+    .project-action {
+      height: 100%;
+      width: 100%;
+      background-color: rgba($primary-color-darkest, 0.7);
+      position: relaitve;
+
+      .project-title { padding-top: 7rem; }
+
+      .project-title,
+      .button {
+        vertical-align: middle;
+        color: #fff;
+
+        &:hover {
+          @extend .button-primary;
+          transition: all 0.15s ease-in;
+          -ms-transition: all 0.15s ease-in;
+          -moz-transition: all 0.15s ease-in;
+          -webkit-transition: all 0.15s ease-in;
+        }
+      }
+    }
+  }
+}
+
+.latest-posts-container {
+  padding-top: 50px;
+}
+
+.post-divider {
+  max-width: 300px;
+}
+
+.frontpage-post {
+  list-style: none;
+  padding-top: 20px;
+
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.post-excerpt {
+  text-align: justify;
+}
+
+.post-date {
+  margin-top: -15px;
+}
+
+.post-link {
+  margin-top: -15px;
+  margin-bottom: 10px;
+  float: right;
+  text-decoration: underline;
+}
+
+
+/***
+Footer
+***/
+
+.footer-border {
+  border-top: #999 dashed 1px;
+  padding-top: 20px;
+}

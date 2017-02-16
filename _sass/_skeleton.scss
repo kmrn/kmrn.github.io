@@ -30,16 +30,18 @@
 
 /* Variables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-$primary-color-lightest: #ECEFF1;
-$primary-color-light: #90A4AE;
-$primary-color-medium: #607d8b;
-$primary-color-dark: #455A64;
-$primary-color-darkest: #263238;
+$primary-color-lightest: #FAFAFA;
+$primary-color-light: #9E9E9E;
+$primary-color-medium: #616161;
+$primary-color-dark: #424242;
+$primary-color-darkest: #212121;
 
-$accent-color-lighter: #FF80AB;
-$accent-color: #FF4081;
-$accent-color-darker: #F50057;
-$accent-color-darkest: #C51162;
+$accent-color-lighter: #FFD180;
+$accent-color: #FFAB40;
+$accent-color-darker: #FF9100;
+$accent-color-darkest: #FF6D00;
+
+$button-primary-text-color: $primary-color-darkest;
 
 
 /* Grid
@@ -115,18 +117,20 @@ $accent-color-darkest: #C51162;
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Helvetica", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+  font-family: 'Kameron', serif;
+  color: #111; }
 
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 2rem; }
@@ -202,10 +206,8 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  color: #FFF;
-  // border-color: #33C3F0;
+  color: $button-primary-text-color;
   border-color: $accent-color;
-  // background-color: #33C3F0;
   background-color: $accent-color; }
 .button.button-primary:hover,
 button.button-primary:hover,
@@ -217,10 +219,17 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  //background-color: #1EAEDB;
   background-color: $accent-color-darker;
   border-color: $accent-color-darker;
-  color: #FFF; }
+  color: $button-primary-text-color; }
+.button.button-primary:active,
+button.button-primary:active,
+input[type="submit"].button-primary:active,
+input[type="reset"].button-primary:active,
+input[type="button"].button-primary:active {
+  background-color: $accent-color-darkest;
+  border-color: $accent-color-darkest;
+  color: $button-primary-text-color; }
 
 
 /* Forms
@@ -376,6 +385,10 @@ p {
   float: right; }
 .u-pull-left {
   float: left; }
+.u-text-center {
+  text-align: center; }
+.u-text-right {
+  text-align: right; }
 
 
 /* Misc

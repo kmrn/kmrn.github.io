@@ -1,0 +1,51 @@
+/***
+Projects Page styling
+styles for /projects/ go here
+***/
+
+.project-panel {
+  height: 200px;
+  background-size: cover;
+  list-style: none;
+
+  @include small-shadow(rgba(0, 0, 0, 0.3));
+
+  -webkit-transition: box-shadow 0.15s ease-in-out;
+  transition: box-shadow 0.15s ease-in-out;
+
+  &:hover {
+    @include ambient-shadow(rgba(0, 0, 0, 0.4));
+    -webkit-transition: box-shadow 0.15s ease-in-out;
+    transition: box-shadow 0.15s ease-in-out;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+.project-action {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+
+
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+
+    -webkit-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  &:active {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.project-title {
+  padding-top: 50px;
+}

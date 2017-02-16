@@ -1,25 +1,27 @@
 ---
 layout: default
-title: It's me, KP.
 ---
 
-<div class="main-container">
+<div class="home">
   <div class="container">
     <section class="row bio-container">
       <div class="bio-image-container one-third column">
-        <img src="/images/bio.png" alt="My face." class="bio-image" />
+        <img src="/images/profile.jpeg" alt="My face." class="bio-image" />
       </div>
       <div class="bio-text-container two-thirds column">
-        <pre class="bio-header"><code>$ whoami<br>Kamran Payne</code></pre>
+        <h2 class="bio-header">About the Author</h2>
         <p class="bio-text">
-          I'm a developer. That's me over to the left. I enjoy making cool things, meeting new people, and trying new foods! That projects page has a list of stuff I've worked on and that blog is just there I guess. You can get a hold of me on various social networks or just with an email.
+          Hello, I'm Kamran and this is my portfolio and blog website. It's where I share all the stuff I make. I'm a software developer and design enthusiast that's really
+          into the ever-evolving art medium of games. I'm also a hobbyist writer, artist, musician, home cook, volunteer, game designer, and rubick's cube solver. You can
+          find the things I make here from art to code. You can also find me on twitter <a href="https://twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a>.
         </p>
       </div>
     </section>
-    <hr class="divider" />
+  </div>
+  <div class="container">
     <section class="latest-container">
       <div class="row">
-        <h3 class="blog-title">&mdash; My Latest Projects &mdash;</h3>
+        <h3 class="blog-title u-text-center">Latest Projects</h3>
         <ul class="projects-container">
           {% for post in site.categories.projects limit:4 %}<li class="project" style="background-image: url({{post.image}});">
               <div class="project-action">
@@ -29,23 +31,26 @@ title: It's me, KP.
         </ul>
       </div>
     </section>
-    <hr class="divider" />
-    <section class="">
-      <div class="row">
-        <h3 class="blog-title">&mdash; Light Reading &mdash;</h3>
-        <ul class="posts-container">
-          {% for post in site.categories.blog limit:3 %}
-            <li class="frontpage-post">
-              <div class="post-block">
-                <div class="post-title"><p class="post-date">{{ post.date | date: '%B %d, %Y' }}</p><h4>{{ post.title }}</h4></div>
-                <p>{{ post.excerpt }}</p>
-                <a href="{{ post.url }}" class="button button-primary">Read</a>
+  </div>
+  <div class="container">
+    <section class="latest-posts-container">
+      <h3 class="blog-title u-text-center">Light Reading</h3>
+      <ul class="posts-container">
+        {% for post in site.categories.blog limit:3 %}
+          <li class="frontpage-post row">
+            <div class="post-block">
+              <div class="three columns">
+                <div class="post-title"><h5>{{ post.title }}</h5><p class="post-date">{{ post.date | date: '%B %d, %Y' }}</p></div>
               </div>
-            </li>
-            <br>
-          {% endfor %}
-        </ul>
-      </div>
+              <div class="nine columns post-excerpt">
+                {{ post.excerpt }}
+                <a href="{{ post.url }}" class="post-link">Continue Reading &rarr;</a>
+              </div>
+            </div>
+          </li>
+          <br>
+        {% endfor %}
+      </ul>
     </section>
   </div>
 </div>

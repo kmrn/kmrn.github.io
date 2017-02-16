@@ -1,33 +1,23 @@
-<header class="section main-header">
-  <div class="container">
-    <div class="row">
-      <div class="title">
-        <h1 class="my-name"><a href="/">Kamran's Kracker Shack</a></h1>
-      </div>
-      <div class="navbar">
-        <ul class="navlist">
-          {% assign current = page.url | downcase | split: '/' %}
-          <!-- <li><a class="button {% if page.url == '/about.html' %}active{% endif %}" href="/">Home</a></li> -->
-          <li><a class="button {% if page.url == '/blog/' %}active{% endif %}" href="/blog/">Blog</a></li>
-          <li><a class="button {% if page.url == '/projects/' %}active{% endif %}" href="/projects/">Projects</a></li>
-          <li><a class="button {% if page.url == '/contact/' %}active{% endif %}" href="/contact/">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  {% if page.path contains '_posts' %}
-    <!-- <div class="post-divider">◀ X ▶</div> -->
-    <hr class="post-divider">
-    <div class="post-header">
-      <div class="container">
-        <div class="row">
-          <h1 class="post-title">{{ page.title }}</h1>
-          <p class="post-meta">
-            {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
-          </p>
+<div class="site-header-container">
+  <header class="site-header">
+    <div class="container">
+      <div class="row">
+        <div class="site-title">
+          <h1><a class="site-title-link" href="{{ site.baseurl }}/">KAMRAN <span class="gray">LEE</span> PAYNE</a></h1>
         </div>
       </div>
+      <div class="row">
+        <nav class="site-nav">
+          <div class="trigger">
+            {% for my_page in site.pages %}
+              {% if my_page.title %}
+              <a class="page-link {% cycle 'gray', 'black' %} {% if page.url == my_page.url %}active{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </nav>
+        <p class="u-pull-right">Programmer. Artist. Cool Guy.
+      </div>
     </div>
-  {% endif %}
-</header>
+  </header>
+</div>
