@@ -159,7 +159,7 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   color: $accent-color;
-  text-decoration: none; }
+  text-decoration: underline; }
 a:hover {
   color: $accent-color-darker; }
 
@@ -206,6 +206,7 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
+  text-decoration: none;
   color: $button-primary-text-color;
   border-color: $accent-color;
   background-color: $accent-color; }

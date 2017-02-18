@@ -1,9 +1,26 @@
 
+/***
+General Layout
+***/
+
 .black { color: #000; }
 .gray { color: #999; }
 
 .row {
   padding: 15px;
+}
+
+article img {
+  max-width: 100%;
+}
+
+
+/***
+Header
+***/
+
+header a {
+  text-decoration: none;
 }
 
 .site-title {
@@ -24,12 +41,6 @@
   padding-bottom: 10px;
   border-bottom: #999 dashed 1px;
   margin-bottom: 5px;
-}
-
-.page-content {
-  a {
-    text-decoration: underline;
-  }
 }
 
 .active {

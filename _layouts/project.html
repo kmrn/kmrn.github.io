@@ -3,9 +3,32 @@ layout: default
 ---
 
 <div class="main-container">
-	<div class="container project">
-		<article class="row project-content">
-			{{ content }}
+	<div class="">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+			<div class="post-header-container">
+	      <header class="post-header container">
+					<div class="row">
+						<div class="one-half column">
+			        <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+			        <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+						</div>
+						<div class="one-half column project-buttons">
+							{% if page.project-url %}
+								<a class="button button-primary" href="{{ page.project-url }}">Go To This Project</a>
+							{% endif %}
+							<br>
+							{% if page.source-url %}
+								<a class="button" href="{{ page.source-url }}">View Project Source</a>
+							{% endif %}
+						</div>
+					</div>
+				</header>
+			</div>
+  		<div class="container post-content" itemprop="articleBody">
+				<div class="row">
+  				{{ content }}
+				</div>
+      </div>
 		</article>
 	</div>
 </div>
