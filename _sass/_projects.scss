@@ -3,10 +3,15 @@ Projects Page styling
 styles for /projects/ go here
 ***/
 
+.project-panel, 
+.art-panel {
+  background-size: cover;
+  background-position: center center;
+  list-style: none;
+}
+
 .project-panel {
   height: 200px;
-  background-size: cover;
-  list-style: none;
 
   @include small-shadow(rgba(0, 0, 0, 0.3));
 
@@ -67,8 +72,6 @@ styles for /projects/ go here
 
 .art-panel {
   height: 500px;
-  background-size: cover;
-  list-style: none;
 
   @include small-shadow(rgba(0, 0, 0, 0.3));
 
