@@ -31,8 +31,8 @@ styles for /projects/ go here
   text-align: center;
 
 
-  -webkit-transition: box-shadow 0.2s ease-in-out;
-  transition: box-shadow 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.4);
@@ -47,10 +47,77 @@ styles for /projects/ go here
 }
 
 .project-title {
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
 .project-buttons {
-  padding: 15px;
+  padding: 10px;
   border: #999 dashed 1px;
+
+  .button {
+    margin: 5px;
+  }
+}
+
+.video-embed {
+  width: 100%;
+  height: 80vh;
+  //margin-bottom: 20px;
+}
+
+.art-panel {
+  height: 500px;
+  background-size: cover;
+  list-style: none;
+
+  @include small-shadow(rgba(0, 0, 0, 0.3));
+
+  -webkit-transition: box-shadow 0.15s ease-in-out;
+  transition: box-shadow 0.15s ease-in-out;
+
+  &:hover {
+    @include ambient-shadow(rgba(0, 0, 0, 0.4));
+    -webkit-transition: box-shadow 0.15s ease-in-out;
+    transition: box-shadow 0.15s ease-in-out;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.art-action {
+  background-color: rgba(0, 0, 0, 0);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0);
+
+
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: backgroun-color 0.2s ease-in-out;
+
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.8);
+
+    -webkit-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+
+    -webkit-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+  }
+
+  &:active {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 1)
+  }
+}
+
+.art-title {
+  padding-top: 200px;
 }

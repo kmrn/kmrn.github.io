@@ -33,6 +33,23 @@ layout: default
     </section>
   </div>
   <div class="container">
+    <section class="latest-art-container">
+      {% for post in site.categories.art limit:1 %}
+        <div class="row">
+          <h3 class="blog-title u-text-center">Newest Art</h3>
+          <div class="art-panel" style="background-image: url({{post.image}});">
+            <a href="{{ post.url }}">
+              <div class="art-action">
+                <h2 class="art-title">{{ post.short-title }}</h2>
+                <!-- <p>{{ post.excerpt }}</p> -->
+              </div>
+            </a>
+          </div>
+        </div>
+      {% endfor %}
+    </section>
+  </div>
+  <div class="container">
     <section class="latest-posts-container">
       <h3 class="blog-title u-text-center">Light Reading</h3>
       <ul class="posts-container">
