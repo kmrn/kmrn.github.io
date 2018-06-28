@@ -3,7 +3,7 @@ published: true
 layout: post
 date: "2018-06-26"
 categories: blog
-title: Recipe(?): Skillet Cakes
+title: Recipe(?) - Skillet Cakes
 ---
 
 You’re back in college. You arrive back in your shared dorm room surrounded by the mess only 4 sophomore age students could make an subsequently live in. The exam you just took is worth a worrying percentage of your final grade and you prepared too little or even not at all for it. *It’ll be fine.* you told yourself. But it wasn’t fine. You want something to comfort yourself but it’s going to need the right balance of results and effort required.
