@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-date: "2018-06-27"
+date: "2018-06-26"
 categories: blog
 title: Recipe(?): Skillet Cakes
 ---
