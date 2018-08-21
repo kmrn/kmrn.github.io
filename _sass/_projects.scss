@@ -90,6 +90,20 @@ styles for /projects/ go here
   }
 }
 
+.one-third-image {
+  max-width: 100%;
+  @include small-shadow(rgba(0, 0, 0, 0.3));
+
+  -webkit-transition: box-shadow 0.15s ease-in-out;
+  transition: box-shadow 0.15s ease-in-out;
+
+  &:hover {
+    @include ambient-shadow(rgba(0, 0, 0, 0.4));
+    -webkit-transition: box-shadow 0.15s ease-in-out;
+    transition: box-shadow 0.15s ease-in-out;
+  }
+}
+
 .art-action {
   background-color: rgba(0, 0, 0, 0);
   height: 100%;
