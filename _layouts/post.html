@@ -3,47 +3,47 @@ layout: default
 ---
 
 <div class="main-container">
-	<div class="">
+    <div class="">
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-			<div class="post-header-container">
-	      <header class="post-header container">
-					<div class="row">
-		        <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-		        <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-					</div>
-				</header>
-			</div>
-  		<div class="container post-content" itemprop="articleBody">
-				<div class="row">
-  				{{ content }}
-				</div>
-      </div>
-		</article>
-		<div class="container post-navigation">
-			<div class="row">
-				{% for post in site.categories.blog %}
-	        {% if post.url == page.url %}
-	            {% assign post_index0 = forloop.index0 %}
-	            {% assign post_index1 = forloop.index %}
-	        {% endif %}
-		    {% endfor %}
-		    {% for post in site.categories.blog %}
-		        {% if post_index0 == forloop.index %}
-		            {% assign next_post = post %}
-		        {% endif %}
-		        {% if post_index1 == forloop.index0 %}
-		            {% assign prev_post = post %}
-		        {% endif %}
-		    {% endfor %}
-		    {% if prev_post %}
-		      <a class="prev button button-primary u-pull-left" href="{{ prev_post.url }}">&larr; {{ prev_post.title }}</a>
-		    {% endif %}
-				{% if next_post %}
-        	<a class="next button button-primary u-pull-right" href="{{ next_post.url }}">{{ next_post.title }} &rarr;</a>
-		    {% endif %}
-			</div>
-		</div>
-		<!-- <hr class="comments-divider"> -->
-		<!-- <div id="disqus_thread"></div> -->
-	</div>
+        <div class="post-header-container">
+            <header class="post-header container">
+                <div class="row">
+                    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+                    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+                </div>
+            </header>
+        </div>
+        <div class="container post-content" itemprop="articleBody">
+            <div class="row">
+                {{ content }}
+            </div>
+        </div>
+        </article>
+        <div class="container post-navigation">
+            <div class="row">
+                {% for post in site.categories.blog %}
+                    {% if post.url == page.url %}
+                        {% assign post_index0 = forloop.index0 %}
+                        {% assign post_index1 = forloop.index %}
+                    {% endif %}
+                {% endfor %}
+                {% for post in site.categories.blog %}
+                    {% if post_index0 == forloop.index %}
+                        {% assign next_post = post %}
+                    {% endif %}
+                    {% if post_index1 == forloop.index0 %}
+                        {% assign prev_post = post %}
+                    {% endif %}
+                {% endfor %}
+                {% if prev_post %}
+                    <a class="prev button button-primary u-pull-left" href="{{ prev_post.url }}">&larr; {{ prev_post.title }}</a>
+                {% endif %}
+                {% if next_post %}
+                    <a class="next button button-primary u-pull-right" href="{{ next_post.url }}">{{ next_post.title }} &rarr;</a>
+                {% endif %}
+            </div>
+        </div>
+        <!-- <hr class="comments-divider"> -->
+        <!-- <div id="disqus_thread"></div> -->
+    </div>
 </div>

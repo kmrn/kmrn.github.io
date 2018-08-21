@@ -190,6 +190,14 @@ Index
   text-decoration: underline;
 }
 
+.post-content {
+  img {
+    display: block;
+    margin: 0 auto;
+    @include small-shadow(rgba(0, 0, 0, 0.2));
+  }
+}
+
 
 /***
 Footer
