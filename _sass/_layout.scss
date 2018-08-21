@@ -3,6 +3,10 @@
 General Layout
 ***/
 
+body {
+  background: #fafafa;
+}
+
 .black { color: #000; }
 .gray { color: #999; }
 
@@ -43,7 +47,7 @@ header a {
   margin-bottom: 5px;
 
   .page-link {
-    margin-right: 30px;
+    margin-right: 20px;
   }
 }
 
@@ -167,7 +171,8 @@ Index
   list-style: none;
   padding-top: 20px;
 
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .post-excerpt {
@@ -192,5 +197,14 @@ Footer
 
 .footer-border {
   border-top: #999 dashed 1px;
-  padding-top: 20px;
+  padding-top: 40px;
+}
+
+.footer-logo {
+  svg {
+    display: block;
+    margin: auto;
+  }
+
+  margin-bottom: 100px;
 }
