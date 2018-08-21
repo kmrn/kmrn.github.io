@@ -9,10 +9,10 @@ layout: default
         <img src="/images/profile.jpeg" alt="My face." class="bio-image" />
       </div>
       <div class="bio-text-container two-thirds column">
-        <h2 class="bio-header">About the Author</h2>
+        <h2 class="bio-header">Hello,</h2>
         <p class="bio-text">
-          Hello, I'm Kamran and this is my portfolio and blog website. It's where I share all the stuff I make. I'm a software developer and design enthusiast that's really
-          into the ever-evolving art medium of games. I'm also a hobbyist writer, artist, musician, home cook, volunteer, game designer, and rubick's cube solver. You can
+          I'm Kamran and this is my portfolio and blog website. It's where I share all the stuff I make. I'm a software developer and design enthusiast that's really
+          into the ever-evolving art medium of games. You can
           find the things I make here from art to code. You can also find me on twitter <a href="https://twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a>.
         </p>
       </div>
@@ -30,23 +30,6 @@ layout: default
               </div></li>{% endfor %}
         </ul>
       </div>
-    </section>
-  </div>
-  <div class="container">
-    <section class="latest-art-container">
-      {% for post in site.categories.art limit:1 %}
-        <div class="row">
-          <h3 class="blog-title u-text-center">Newest Art</h3>
-          <div class="art-panel" style="background-image: url({{post.image}});">
-            <a href="{{ post.url }}">
-              <div class="art-action">
-                <h2 class="art-title">{{ post.short-title }}</h2>
-                <!-- <p>{{ post.excerpt }}</p> -->
-              </div>
-            </a>
-          </div>
-        </div>
-      {% endfor %}
     </section>
   </div>
   <div class="container">

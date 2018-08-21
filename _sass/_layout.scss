@@ -43,7 +43,7 @@ header a {
   margin-bottom: 5px;
 
   .page-link {
-    margin-right: 10px;
+    margin-right: 30px;
   }
 }
 
@@ -72,15 +72,19 @@ Index
       margin: 0 auto;
 
       background-color: $accent-color;
-      width: 100%;
-      max-width: 300px;
+      max-width: 100%;
+      object-fit: cover;
+      height: 300px;
+      width: 300px;
+      border-radius: 300px;
 
       @include ambient-shadow(rgba(0, 0, 0, 0.3));
     }
   }
 
   .bio-text-container {
-    text-align: justify;
+    padding-top: 40px;
+    // text-align: justify;
   }
 }
 
@@ -107,6 +111,7 @@ Index
       width: 50%;
       height: 50vw;
       background-size: cover;
+      background-position: center center;
 
       @media (min-width: 750px) {
         width: 25%;
