@@ -43,4 +43,4 @@ You can download a version of the game for Windows and MacOS on itch.io using th
 
 ![team pic](/images/super_space_agency/team.jpg)
 
-Super Space Agency was pitched and designed by me, programmed by [Cody Brown](https://twitter.com/xVenilor) and I, uses all original art drawn by [Joey Fisher](http://jfisherfolio.squarespace.com/), and features the kickin' tunes of [Christopher Medrano](https://twitter.com/yaBoiMedrano) and Scott Nubar.
+Super Space Agency was pitched and designed by me, programmed by [Cody Brown](https://twitter.com/xVenilor) and I, uses all original art drawn by [Joey Fisher](http://jfisherfolio.squarespace.com/), and features the kickin' tunes of [Christopher Medrano](https://soundcloud.com/nanmusic) and Scott Nubar.
