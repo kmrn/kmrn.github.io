@@ -4,53 +4,26 @@ layout: default
 
 <div class="home">
   <div class="container">
-    <section class="row bio-container">
-      <div class="bio-image-container one-third column">
-        <img src="/images/profile.jpeg" alt="My face." class="bio-image" />
-      </div>
-      <div class="bio-text-container two-thirds column">
-        <h2 class="bio-header">Hello,</h2>
-        <p class="bio-text">
-          I'm Kamran and this is my portfolio and blog website. It's where I share all the stuff I make. I'm a software developer and design enthusiast that's really
-          into the ever-evolving art medium of games. You can
-          find the things I make here from art to code. You can also find me on twitter <a href="https://twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a>.
-        </p>
-      </div>
-    </section>
-  </div>
-  <div class="container">
-    <section class="latest-container">
-      <div class="row">
-        <h3 class="blog-title u-text-center">Latest Projects</h3>
-        <ul class="projects-container">
-          {% for post in site.categories.projects limit:4 %}<li class="project" style="background-image: url({{post.image}});">
-              <div class="project-action">
-                <h5 class="project-title">{{ post.short-title }}</h5>
-                <a href="{{ post.url }}" class="button">View</a>
-              </div></li>{% endfor %}
-        </ul>
-      </div>
-    </section>
-  </div>
-  <div class="container">
-    <section class="latest-posts-container">
-      <h3 class="blog-title u-text-center">Light Reading</h3>
-      <ul class="posts-container">
-        {% for post in site.categories.blog limit:3 %}
-          <li class="frontpage-post row">
-            <div class="post-block">
-              <div class="three columns">
-                <div class="post-title"><h5>{{ post.title }}</h5><p class="post-date">{{ post.date | date: '%B %d, %Y' }}</p></div>
-              </div>
-              <div class="nine columns post-excerpt">
-                {{ post.excerpt }}
-                <a href="{{ post.url }}" class="post-link">Continue Reading &rarr;</a>
-              </div>
-            </div>
-          </li>
-          <br>
-        {% endfor %}
+    <div class="row">
+      <ul class="contact-details">
+        <li><a href="mailto:hello@kamranpayne.com">hello@kamranpayne.com</a></li>
+        <li><a href="https://www.linkedin.com/in/kamranpayne/">LinkedIn</a></li>
+        <li><a href="https://github.com/kmrn">GitHub</a></li>
       </ul>
-    </section>
+    </div>
+    <div class="row">
+      <p>
+        Engineering Manager with a decade of full-stack experience leading teams that ship. At <a
+          href="https://civera.com">Civera</a>, I drive
+        architecture,
+        delivery, and team development across election transparency tools used in 17+ U.S. states. I've integrated AI
+        agents into workflows, driven SOC2 compliance
+        from scratch, and shipped work featured in <a
+          href="https://www.nytimes.com/2024/11/23/us/ballots-election-boise-idaho.html">The New York Times</a> and
+        <a href="https://www.wired.com/story/ballot-verifier-idaho-new-tech-election-deniers/">WIRED</a>.
+      </p>
+      <a href="{{ '/posts' | prepend: site.baseurl }}">Old Blog</a>
+      </p>
+    </div>
   </div>
 </div>

@@ -1,0 +1,34 @@
+---
+layout: page
+title: Posts
+permalink: /posts/
+---
+
+<!-- /posts.html
+This page will appear when you visit /posts -->
+
+<div class="main-container">
+  <div class="container">
+    <section class="latest-posts-container">
+      <ul class="posts-container">
+        {% for post in site.posts %}
+        <li class="frontpage-post row">
+          <div class="post-block">
+            <div class="three columns">
+              <div class="post-title">
+                <h5>{{ post.title }}</h5>
+                <p class="post-date">{{ post.date | date: '%B %d, %Y' }}</p>
+              </div>
+            </div>
+            <div class="nine columns post-excerpt">
+              {{ post.excerpt }}
+              <a href="{{ post.url }}" class="post-link">Continue Reading &rarr;</a>
+            </div>
+          </div>
+        </li>
+        <br>
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+</div>
